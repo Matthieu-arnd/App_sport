@@ -4,50 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Creationprog"
-    tools:ignore="ExtraText">
+    tools:context=".activity_creationprog.xml">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" />
+        android:orientation="vertical" >
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ListViewSeance">
+        <ListView
+            android:id="@+id/type_seance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    </ListView>
+        </ListView>
 
+    </LinearLayout>
 
     <Button
         android:id="@+id/ajout"
-        android:layout_width="50dp"
+        android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_alignParentRight="True"
         android:layout_alignParentBottom="True"
         android:layout_marginRight="300dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="25dp"
         android:gravity="center"
         android:onClick="ajout"
-        android:text="+"
-        android:background="@drawable/circle_background_btn"
-        />
+        android:text="+">
 
+        </Button>
     <Button
         android:id="@+id/save"
-        android:layout_width="100dp"
+        android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_alignParentRight="True"
         android:layout_alignParentBottom="True"
         android:layout_marginRight="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="25dp"
         android:gravity="center"
-        android:onClick="Save"
-        android:text="Save"
+        android:onClick="save"
+        android:text="Save">
 
-        />
-
-
+        </Button>
 
 </RelativeLayout>
